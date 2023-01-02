@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    colors="true"
+>
+    <php>
+        <ini name="memory_limit" value="3G" />
+    </php>
+    <testsuites>
+        <testsuite name ="Default Test Suite">
+            <directory>tests/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

@@ -1,0 +1,5 @@
+/vendor/
+
+env.override.php
+.idea
+.phpunit.result.cache
