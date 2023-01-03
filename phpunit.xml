@@ -9,5 +9,8 @@
         <testsuite name ="Default Test Suite">
             <directory>tests/</directory>
         </testsuite>
+        <testsuite name ="Packages Test Suite">
+            <directory>packages/*/tests/</directory>
+        </testsuite>
     </testsuites>
 </phpunit>

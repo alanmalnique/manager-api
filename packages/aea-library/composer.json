@@ -1,0 +1,31 @@
+{
+    "name": "aeatech/library",
+    "description": "A&A Tech - API Library Provider",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Aeatech\\Commons\\": "src/commons/",
+            "Aeatech\\Jwt\\": "src/jwt/",
+            "Aeatech\\Router\\": "src/router/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\Aeatech\\Jwt\\": "tests/src/jwt/",
+            "Test\\Aeatech\\Router\\": "tests/src/router/",
+            "Test\\Support\\Aeatech\\Jwt\\": "tests/_support/jwt/",
+            "Test\\Support\\Aeatech\\Router\\": "tests/_support/router/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alan Malnique Justino"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

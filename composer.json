@@ -19,11 +19,24 @@
             "name": "Alan Malnique Justino"
         }
     ],
-    "minimum-stability": "dev",
-    "require-dev": {
-        "phpunit/phpunit": "10.0.x-dev"
-    },
+    "minimum-stability": "stable",
     "scripts": {
-        "test": "./vendor/bin/phpunit"
-    }
+        "test": "./vendor/bin/phpunit",
+        "publish": [
+            "App\\Provider\\KernelProvider::publish"
+        ]
+    },
+    "require": {
+        "aeatech/library": "dev-main"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "friendsofphp/php-cs-fixer": "^3.13"
+    },
+    "repositories": [
+        {
+            "url": "./packages/*",
+            "type": "path"
+        }
+    ]
 }
