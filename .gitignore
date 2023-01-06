@@ -1,6 +1,7 @@
 /vendor
 /coverage
 
+*.log
 env.override.php
 .idea
 .phpunit.result.cache
