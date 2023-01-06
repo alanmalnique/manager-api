@@ -14,7 +14,7 @@ use PHPUnit\Framework\TestCase;
 
 final class JWTTest extends TestCase
 {
-    private string $fakeToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzUyNzU0ODAsInVzciI6ImZha2VWYWx1ZSJ9.vcUQqgLReAKWqbfO7s1kRGO-R_Hk_F47gL1q7ESkAsA";
+    private string $fakeToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzUyODk4ODAsInVzciI6ImZha2VWYWx1ZSJ9.dGFf2um8EgEBKyF45asa1KXLMrV4h--t_CnxqKeCCaU";
     public function setUp(): void
     {
         Clock::freeze('2023-02-01 18:18:00');

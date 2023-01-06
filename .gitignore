@@ -1,4 +1,5 @@
 /vendor
+/coverage
 
 env.override.php
 .idea
