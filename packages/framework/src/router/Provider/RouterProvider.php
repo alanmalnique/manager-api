@@ -15,7 +15,7 @@ class RouterProvider
 {
     protected static array $routeMiddleware = [];
     private static string $namespace;
-    private static string $prefix;
+    private static string $prefix = '';
     private static Router $router;
 
     /** @return string */

@@ -26,7 +26,7 @@ final class Router implements RouterInterface
         }
     }
 
-    public function add(RouteBase $route): self
+    private function add(RouteBase $route): self
     {
         $this->routes->offsetSet($route->getName(), $route);
         return $this;

@@ -18,16 +18,13 @@ class RouterTest extends TestCase
     public function __construct($name = null, array $data = [], $dataName = '')
     {
         parent::__construct($name, $data, $dataName);
-        $routeHome = new RouteBase('home_page', '/home', 'App\Controller\HomeController@home');
-        $routeArticle = new RouteBase('article_page', '/view/article', 'App\Controller\HomeController@article');
-        $routeArticleWithParam = new RouteBase('article_page_by_id', '/view/article/{id}', 'App\Controller\HomeController@article');
-        $routeArticleWithParams = new RouteBase('article_page_by_id_and_page', '/view/article/{id}/{page}', 'App\Controller\HomeController@article');
+        $routes = [];
+        $routes[] = new RouteBase('home_page', '/home', 'App\Controller\HomeController@home');
+        $routes[] = new RouteBase('article_page', '/view/article', 'App\Controller\HomeController@article');
+        $routes[] = new RouteBase('article_page_by_id', '/view/article/{id}', 'App\Controller\HomeController@article');
+        $routes[] = new RouteBase('article_page_by_id_and_page', '/view/article/{id}/{page}', 'App\Controller\HomeController@article');
 
-        $this->router = (new Router())
-            ->add($routeHome)
-            ->add($routeArticle)
-            ->add($routeArticleWithParam)
-            ->add($routeArticleWithParams);
+        $this->router = (new Router($routes, ''));
     }
 
     public function test_MatchRoute()
