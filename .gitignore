@@ -1,5 +1,6 @@
 /vendor
 /coverage
+/storage/logs/*
 
 env.override.php
 .idea
