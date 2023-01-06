@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Aeatech\Jwt\Service;
 
+/** @codeCoverageIgnore */
 class JWTConfigService
 {
     public function resolve(): array

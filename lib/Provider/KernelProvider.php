@@ -7,7 +7,7 @@ namespace App\Provider;
 final class KernelProvider
 {
     private static array $providers = [
-        \Aeatech\Jwt\Provider\JWTProvider::class
+        \Aeatech\Jwt\Provider\JWTProvider::class,
     ];
 
     public static function boot(): void

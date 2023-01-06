@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Aeatech\Jwt\Provider;
 
+/** @codeCoverageIgnore */
 final class JWTProvider
 {
     public function boot(): void
