@@ -1,6 +1,6 @@
 {
-    "name": "aeatech/library",
-    "description": "A&A Tech - API Library Provider",
+    "name": "aeatech/framework",
+    "description": "A&A Tech - API Framework Provider",
     "type": "library",
     "require-dev": {
         "phpunit/phpunit": "^9.5"
@@ -16,8 +16,10 @@
     "autoload-dev": {
         "psr-4": {
             "Test\\Aeatech\\Jwt\\": "tests/src/jwt/",
+            "Test\\Aeatech\\Commons\\": "tests/src/commons/",
             "Test\\Aeatech\\Router\\": "tests/src/router/",
             "Test\\Support\\Aeatech\\Jwt\\": "tests/_support/jwt/",
+            "Test\\Support\\Aeatech\\Commons\\": "tests/_support/commons/",
             "Test\\Support\\Aeatech\\Router\\": "tests/_support/router/"
         }
     },
@@ -27,5 +29,7 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "symfony/http-kernel": "^6.2"
+    }
 }
