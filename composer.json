@@ -25,6 +25,9 @@
         "coverage": "php -d xdebug.mode=coverage ./vendor/bin/phpunit --coverage-html coverage",
         "publish": [
             "App\\Provider\\KernelProvider::publish"
+        ],
+        "post-install-cmd": [
+            "cd packages/framework & composer install"
         ]
     },
     "require": {

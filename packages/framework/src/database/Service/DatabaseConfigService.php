@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Aeatech\Jwt\Service;
+namespace Aeatech\Database\Service;
 
 /** @codeCoverageIgnore */
-class JWTConfigService
+class DatabaseConfigService
 {
     public function resolve(): array
     {
-        $location = __DIR__.'./../../../../../config/jwt.php';
+        $location = __DIR__.'./../../../../../config/database.php';
         if (file_exists($location)) {
             $file = require($location);
         } else {
-            $file = require(__DIR__.'./../../config/jwt-config.php');
+            $file = require(__DIR__.'./../../config/database.php');
         }
         return $file;
     }

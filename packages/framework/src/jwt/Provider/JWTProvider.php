@@ -7,9 +7,14 @@ namespace Aeatech\Jwt\Provider;
 /** @codeCoverageIgnore */
 final class JWTProvider
 {
-    public function boot(): void
+    public function publish(): void
     {
-        copy(__DIR__ . './../../config/jwt-config.php', __DIR__.'./../../../../config/jwt.php');
-        echo 'JWT config has been copied for config/ dir.';
+        $newFile = __DIR__.'./../../../../../config/jwt.php';
+        if (!file_exists($newFile)) {
+            copy(__DIR__ . './../../config/jwt-config.php', $newFile);
+            echo 'JWT config has been copied for config/ dir.';
+        } else {
+            echo 'Existing JWT config file detected.';
+        }
     }
 }

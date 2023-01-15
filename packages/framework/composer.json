@@ -10,7 +10,8 @@
         "psr-4": {
             "Aeatech\\Commons\\": "src/commons/",
             "Aeatech\\Jwt\\": "src/jwt/",
-            "Aeatech\\Router\\": "src/router/"
+            "Aeatech\\Router\\": "src/router/",
+            "Aeatech\\Database\\": "src/database/"
         }
     },
     "autoload-dev": {
@@ -18,9 +19,11 @@
             "Test\\Aeatech\\Jwt\\": "tests/src/jwt/",
             "Test\\Aeatech\\Commons\\": "tests/src/commons/",
             "Test\\Aeatech\\Router\\": "tests/src/router/",
+            "Test\\Aeatech\\Database\\": "tests/src/database/",
             "Test\\Support\\Aeatech\\Jwt\\": "tests/_support/jwt/",
             "Test\\Support\\Aeatech\\Commons\\": "tests/_support/commons/",
-            "Test\\Support\\Aeatech\\Router\\": "tests/_support/router/"
+            "Test\\Support\\Aeatech\\Router\\": "tests/_support/router/",
+            "Test\\Support\\Aeatech\\Database\\": "tests/_support/database/"
         }
     },
     "authors": [

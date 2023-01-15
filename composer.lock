@@ -12,7 +12,7 @@
             "dist": {
                 "type": "path",
                 "url": "./packages/framework",
-                "reference": "4953e5998271b953f7cc0c5da72a3c5088050ca8"
+                "reference": "ef0eb370251fad242080a12ff891b689dd2237a6"
             },
             "require": {
                 "symfony/http-kernel": "^6.2"
@@ -25,7 +25,8 @@
                 "psr-4": {
                     "Aeatech\\Commons\\": "src/commons/",
                     "Aeatech\\Jwt\\": "src/jwt/",
-                    "Aeatech\\Router\\": "src/router/"
+                    "Aeatech\\Router\\": "src/router/",
+                    "Aeatech\\Database\\": "src/database/"
                 }
             },
             "autoload-dev": {
@@ -33,9 +34,11 @@
                     "Test\\Aeatech\\Jwt\\": "tests/src/jwt/",
                     "Test\\Aeatech\\Commons\\": "tests/src/commons/",
                     "Test\\Aeatech\\Router\\": "tests/src/router/",
+                    "Test\\Aeatech\\Database\\": "tests/src/database/",
                     "Test\\Support\\Aeatech\\Jwt\\": "tests/_support/jwt/",
                     "Test\\Support\\Aeatech\\Commons\\": "tests/_support/commons/",
-                    "Test\\Support\\Aeatech\\Router\\": "tests/_support/router/"
+                    "Test\\Support\\Aeatech\\Router\\": "tests/_support/router/",
+                    "Test\\Support\\Aeatech\\Database\\": "tests/_support/database/"
                 }
             },
             "license": [
